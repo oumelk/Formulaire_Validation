@@ -1,0 +1,97 @@
+<!DOCTYPE.html>
+<html>
+    <head>
+        <meta charset='utf-8' />
+        <link rel="stylesheet" href='index.css'>
+        <link rel='stylesheet' href='awesome/css/all.min.css'/>
+                   
+        <title> formulaire </title>
+    </head>
+    <body>
+        <header>
+        	<nav>
+        		<ul>
+        			<li class='Acceuil'><a href='#'>Acceuil</a></li>
+        			<li class='Contact'><a href='$$$'>Contact</a></li>
+        			<li class='Forum'><a href='^^^'>Forum</a></li>
+        			<li class='Actualités'><a href='|||'>Actualités</a></li>
+        		</ul>
+        	</nav>
+        </header>
+        <div class='formulaire'>
+            <h1>Remplir votre formulaire</h1>
+            <form name='formulaire'>
+                <fieldset>
+                    <legend>Vos informations</legend>
+
+        			<table>
+        				<tr>
+        			        <td><label>Nom<span class='star'>*</span></label></td>
+        			        <td><input type="text" placeholder=" Votre nom"></td>
+                            <td><label for='pays'>Pays<span class='star'>*</span></label></td>
+                            <td>
+                                <select id='pays' type='Pays' class='pays'>
+                                    <option>Maroc</option>
+                                    <option>Algérie</option>
+                                    <option>Tunisie</option>
+                                    <option>Autres</option>
+                                </select>
+                            </td>
+        			    </tr>
+        			    <tr>
+        			        <td><label>Prénom<span class='star'>*</span></label></td>
+        			        <td><input type="text" placeholder=" Votre prénom"></td>
+                            <td><label>Mot de passe<span class='star'>*</span></label></td>
+                            <td><input type="password" placeholder="Votre mot de passe" ><td>
+        			    <tr>
+        			    	<td>
+                                <label>E-mail<span class='star'>*</span></label></br>                               
+                            </td>
+
+        			        <td>
+                                <input 
+                                    type="E-mail" 
+                                    placeholder="xyz@gmail.com" 
+                                    name='mail' 
+                                    id='mail' 
+                                    value="" 
+                                    onkeydown="valider()"
+                                />
+                                <span id="text"></span>
+                            </td>
+                            <td><label>Confirmer votre mot de passe<span class='star'>*</span></label></td>
+                            <td><input type="password" placeholder="Confirmez votre mot de passe" ></td>
+        			    </tr>
+        			    <tr>
+        			        <td><label>Date de naissance<span class='star'>*</span></label></td>
+        			        <td><input type="Date"></td>
+                            <td><label class='homme'>Homme</label><input type="radio" class='boutton' name='radio'>&nbsp;</td>
+                            <td><label>Femme</label><input type="radio" class='boutton' name='radio'>&nbsp;</td>
+        			    </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <label>La vérification est terminée</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name='check'>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <button type='button' class ='inscrire' name='inscription' onclick="validerFormulaire()"> 
+                                    <i class='fas fa-user-plus'></i>S'inscrire
+                                </button>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    	<script src='script.js'></script> 
+    </body>       
+</html>
